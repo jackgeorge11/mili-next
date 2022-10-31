@@ -8,6 +8,10 @@ export default function RootLayout({ children }) {
     <html>
       <head>
         <title>Maria Ines Life Interiors</title>
+        <meta
+          name="description"
+          content="Transforming your personal, living, and working spaces at the intersection between scientific and spiritual interference."
+        />
         <meta property="og:title" content="Maria Ines Life Interiors" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://mariaineslifeinteriors.com/" />
