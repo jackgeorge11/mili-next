@@ -192,18 +192,18 @@ nav {
   }
 }
 
-.header-logo {
-  display: none;
-  width: 3rem;
-  position: fixed;
-  top: 0;
-  left: 0;
-  margin: $glg;
+// .header-logo {
+//   display: none;
+//   width: 3rem;
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   margin: $glg;
 
-  @include resp {
-    display: block;
-  }
-}
+//   @include resp {
+//     display: block;
+//   }
+// }
 
 .signature {
   width: 30vw;
