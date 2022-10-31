@@ -2,13 +2,14 @@ import Link from "next/link";
 import React from "react";
 import { getBlurb } from "../tools/api";
 import Nav from "./Nav";
+import SignatureWrapper from "./SignatureWrapper";
 
 export default async function Signature({ children, page }) {
   const blurb = await getBlurb();
   return (
     <>
       <Nav />
-      <div className="signature">
+      <SignatureWrapper>
         <div className="signature-top">
           <div>
             <h1 className="lora">Maria Ines</h1>
@@ -19,7 +20,7 @@ export default async function Signature({ children, page }) {
           </Link>
         </div>
         <p>{blurb.data.blurbCollection.items[0].blurb}</p>
-      </div>
+      </SignatureWrapper>
       <main>{children}</main>
     </>
   );
