@@ -35,7 +35,7 @@ export default async function About() {
     <Frame className="about">
       <PageHeader title="About" />
       <img src={about.data.aboutCollection.items[0].image.url} alt="" />
-      {about.data.aboutCollection.items[0].description
+      {about?.data?.aboutCollection?.items?.[0]?.description
         .split("\n")
         .map((i, j) => (
           <h3 key={j}>{i}</h3>

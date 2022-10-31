@@ -19,7 +19,7 @@ export default async function Signature({ children, page }) {
             <img src="./images/logo.png" alt="" id="about" />
           </Link>
         </div>
-        <p>{blurb.data.blurbCollection.items[0].blurb}</p>
+        <p>{blurb?.data?.blurbCollection?.items[0].blurb}</p>
       </SignatureWrapper>
       <main>{children}</main>
     </>

@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import { motion } from "framer-motion";
 import sleep from "../tools/sleep";
 
 export default function LoadingScreen() {
@@ -19,7 +18,7 @@ export default function LoadingScreen() {
   }, []);
 
   return (
-    <motion.div class={loader}>
+    <div className={loader}>
       <h2>
         <span>W</span>
         <span>e</span>
@@ -29,6 +28,6 @@ export default function LoadingScreen() {
         <span>m</span>
         <span>e</span>
       </h2>
-    </motion.div>
+    </div>
   );
 }
