@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;600&family=Raleway:ital,wght@0,200;1,200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;600&family=Raleway:ital,wght@0,300;1,300&display=swap");
 
 // VARIABLES
 
@@ -88,7 +88,7 @@ a {
   .#{$e} {
     font-size: $s;
     margin: 0;
-    font-weight: 200;
+    font-weight: 300;
     font-weight: 400;
 
     @include resp {
