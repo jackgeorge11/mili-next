@@ -58,7 +58,7 @@ a {
   font-weight: 600;
   color: black;
   text-decoration: none;
-  opacity: 0.5;
+  opacity: 0.65;
   transition: opacity $t;
 
   &.is--active,
@@ -189,6 +189,11 @@ nav {
 
   a {
     margin-left: $glg;
+    font-size: $sm;
+  }
+
+  &.home {
+    display: none;
   }
 }
 
@@ -251,6 +256,7 @@ nav {
 
   &.home {
     min-width: 300px;
+    max-width: none;
 
     h1 {
       $size: $lg;
@@ -299,6 +305,46 @@ main {
     justify-content: flex-end;
   }
 
+  .home-wrapper {
+    position: fixed;
+    width: calc(100vw - #{$gsm * 2});
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    flex-direction: column;
+    padding: $gsm;
+
+    h1 {
+      text-align: center;
+      font-size: $lg * 1.5;
+    }
+
+    h3 {
+      max-width: 40rem;
+      text-align: center;
+    }
+
+    img {
+      width: 5rem;
+      margin-top: $glg;
+    }
+
+    .ctas {
+      width: fit-content;
+      margin-top: $glg;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      .cta {
+        margin-right: $gsm;
+        text-align: center;
+        margin-bottom: $gsm;
+      }
+    }
+  }
+
   article {
     transition: opacity $t;
     width: 62%;
@@ -321,20 +367,18 @@ main {
 
     .page-header {
       flex-direction: column;
-      width: 30%;
-      max-width: 15rem;
-      min-width: 5rem;
-      margin-bottom: $glg;
+      width: fit-content;
+      margin-bottom: $glg * 1.5;
 
       h1 {
         font-family: $lora;
-        // margin-bottom: $gsm;
+        padding-left: $glg;
       }
 
       .line {
         content: "";
-        width: 100%;
         border-top: 1px solid black;
+        flex: 1;
       }
     }
 
@@ -351,6 +395,16 @@ main {
           margin-left: 0;
           margin-right: $gmd;
           align-items: flex-start;
+        }
+      }
+    }
+
+    &.home {
+      .ctas {
+        margin: 0 0 $gmd;
+
+        &.top {
+          margin-top: $glg;
         }
       }
     }
@@ -444,8 +498,13 @@ main {
         }
       }
 
+      .yelp-wrapper {
+        width: 100%;
+        margin: $gsm 0 $glg;
+      }
+
       .ctas {
-        margin-top: $gsm;
+        margin-top: $gmd;
       }
     }
   }

@@ -2,12 +2,18 @@ import Canvas from "./Canvas";
 import Signature from "./Signature";
 import "../styles/style.scss";
 import LoadingScreen from "./LoadingScreen";
+import Nav from "./Nav";
+import SignatureWrapper from "./SignatureWrapper";
 
 export default function RootLayout({ children }) {
   return (
     <html>
       <head>
         <title>Maria Ines Life Interiors</title>
+        <meta
+          name="viewport"
+          content="width=device-width,initial-scale=1.0"
+        ></meta>
         <meta
           name="description"
           content="Transforming your personal, living, and working spaces at the intersection between scientific and spiritual interference."
@@ -108,7 +114,11 @@ export default function RootLayout({ children }) {
       </head>
       <body>
         <Canvas>
-          <Signature>{children}</Signature>
+          <Nav />
+          <SignatureWrapper>
+            <Signature />
+          </SignatureWrapper>
+          <main>{children}</main>
         </Canvas>
         <LoadingScreen />
       </body>

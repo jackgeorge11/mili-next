@@ -32,12 +32,12 @@ export default async function Services() {
       {services?.data?.servicesCollection?.items
         ?.sort((a, b) => a.order - b.order)
         .map((s, i) => (
-          <>
+          <React.Fragment key={i}>
             <h2>
               {s.title} {s.cost ? <span className="lora">{s.cost}</span> : null}
             </h2>
             <h3>{s.description}</h3>
-          </>
+          </React.Fragment>
         ))}
       <Ctas learnMore="/testimonials" />
     </Frame>

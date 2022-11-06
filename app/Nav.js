@@ -4,12 +4,11 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React from "react";
 
-export default function Nav() {
+export default function Nav({ isHome }) {
   const path = usePathname();
   const page = path.replace("/", "");
-  console.log(page);
   return (
-    <nav>
+    <nav className={isHome ? "in--sig" : !page || page === "/" ? "home" : ""}>
       <Link
         href="/services"
         passHref={true}
