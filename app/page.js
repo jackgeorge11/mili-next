@@ -15,10 +15,10 @@ export default async function Home() {
         <Link href="/testimonials" className="cta" passHref={true}>
           Read Testimonials
         </Link>
-        <Link href="/services" className="cta" passHref={true}>
+        <Link href="/about" className="cta" passHref={true}>
           Learn More
         </Link>
-        <Link href="/testimonials" className="cta" passHref={true}>
+        <Link href="/contact" className="cta" passHref={true}>
           Get in Touch
         </Link>
       </div>
