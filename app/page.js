@@ -22,6 +22,24 @@ export default async function Home() {
           Get in Touch
         </Link>
       </div>
+      <div className="ctas">
+        <a
+          className="cta mini"
+          href="https://www.instagram.com/mariaineslifeinteriors/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Instagram
+        </a>
+        <a
+          className="cta mini"
+          href="https://www.yelp.com/biz/maria-ines-life-interiors-richmond?utm_campaign=www_business_share_popup&utm_medium=copy_link&utm_source=(direct)"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Yelp
+        </a>
+      </div>
       <img src="./images/logo.png" alt="" id="about" />
     </div>
   );
