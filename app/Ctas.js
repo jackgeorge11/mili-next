@@ -10,7 +10,7 @@ export default function Ctas({ learnMore }) {
         rel="noopener noreferrer"
         className="cta"
       >
-        Let's Chat
+        Let&apos;s Chat
       </a>
       <Link href={learnMore ? learnMore : "/services"} className="cta">
         Learn More
